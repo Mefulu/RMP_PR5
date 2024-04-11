@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/F_Screen">
+
+    <fragment
+        android:id="@+id/F_Screen"
+        android:name="com.example.myapplication_pr5.F_Screen"
+        tools:layout="@layout/f_screen">
+        <action
+            android:id="@+id/action_f_screen_to_s_screen"
+            app:destination="@id/S_Screen"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/S_Screen"
+        android:name="com.example.myapplication_pr5.S_Screen"
+        tools:layout="@layout/s_screen">
+        <action
+            android:id="@+id/action_s_screen_to_t_screen"
+            app:destination="@id/T_Screen"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/T_Screen"
+        android:name="com.example.myapplication_pr5.T_Screen"
+        tools:layout="@layout/t_screen">
+        <action
+            android:id="@+id/action_t_screen_to_f_screen"
+            app:destination="@id/F_Screen"/>
+    </fragment>
+
+</navigation>
